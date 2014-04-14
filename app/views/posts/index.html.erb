@@ -1,0 +1,32 @@
+<h1> hello this is testing</h1>
+<table>
+
+        <tr>
+            <th>Question</th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+
+        </tr>
+
+    <% @posts.each do |post| %>
+        <tr>
+            <td><%= post.Question %></td>
+            <td><%= post.A %></td>
+            <td><%= post.B %></td>
+            <td><%= post.C %></td>
+            <td><%= post.D %></td>
+
+            <td><%= link_to 'Show', post_path(post) %></td>
+            <td><%= link_to 'Edit', edit_post_path(post) %></td>
+
+        </tr>
+
+     <%end%>
+
+
+
+
+
+</table>
