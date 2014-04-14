@@ -27,6 +27,9 @@
         <%= f.label :D %>
         <%= f.text_field :D %>
     </p>
+
+    <%= f.select :Subjects, [['Maths','Maths'],['Biology','Biology'],['Chemistry','Chemistry']] %>
+
     <p>
         <%= f.submit "submit" %>
 <% end %>

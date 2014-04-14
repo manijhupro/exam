@@ -1,13 +1,8 @@
 Exam::Application.routes.draw do
 
-get "posts/index"
-get "posts/edit"
-get "posts/new"
-get "posts/show"
+  root :to => "posts#index"
+  resources :posts
 
-
-  #root :to =>redirect('/posts')
-  #resources :posts
   #resources :all
 
   # The priority is based upon order of creation:
